@@ -27,14 +27,6 @@ public class TaskMapper {
         );
     }
 
-    public TaskDto mapToOptionalTaskDto(final Optional<Task> task) {
-        return new TaskDto(
-                task.get().getId(),
-                task.get().getTitle(),
-                task.get().getContent()
-        );
-    }
-
     public List<TaskDto> mapToTaskDtoList(final List<Task> taskList) {
         return taskList.stream()
                 .map(this::mapToTaskDto)
