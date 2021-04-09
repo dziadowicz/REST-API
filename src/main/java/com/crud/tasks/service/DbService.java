@@ -4,6 +4,7 @@ import com.crud.tasks.domain.Task;
 import com.crud.tasks.repository.TaskRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
 import java.util.Optional;
