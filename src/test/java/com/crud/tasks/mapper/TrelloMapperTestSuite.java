@@ -59,7 +59,7 @@ public class TrelloMapperTestSuite {
         List<TrelloList> resultList = trelloMapper.mapToList(trelloListDtoList);
 
         //Then
-        assertEquals(resultList.get(0).getClass(), TrelloList.class);
+        assertEquals(TrelloList.class, resultList.get(0).getClass());
     }
 
     @Test
@@ -75,7 +75,7 @@ public class TrelloMapperTestSuite {
         List<TrelloListDto> resultList = trelloMapper.mapToListDto(trelloListList);
 
         //Then
-        assertEquals(resultList.get(0).getClass(), TrelloListDto.class);
+        assertEquals(TrelloListDto.class, resultList.get(0).getClass());
     }
 
     @Test
@@ -87,7 +87,7 @@ public class TrelloMapperTestSuite {
         TrelloCard result = trelloMapper.mapToCard(trelloCardDto);
 
         //Then
-        assertEquals(result.getClass(), TrelloCard.class);
+        assertEquals(TrelloCard.class, result.getClass());
     }
 
     @Test
@@ -99,6 +99,6 @@ public class TrelloMapperTestSuite {
         TrelloCardDto result = trelloMapper.mapToCardDto(trelloCard);
 
         //Then
-        assertEquals(result.getClass(), TrelloCardDto.class);
+        assertEquals(TrelloCardDto.class, result.getClass());
     }
 }
