@@ -19,6 +19,7 @@ public class TrelloMapperTestSuite {
         //Given
         TrelloBoardDto trelloBoardDto = new TrelloBoardDto("0", "name", new ArrayList<TrelloListDto>());
         TrelloBoardDto trelloBoardDto1 = new TrelloBoardDto("1", "name1", new ArrayList<TrelloListDto>());
+        TrelloBoardDto trelloBoardDto2 = new TrelloBoardDto();
         List<TrelloBoardDto> trelloBoardDtoList = new ArrayList<>();
         trelloBoardDtoList.add(trelloBoardDto);
         trelloBoardDtoList.add(trelloBoardDto1);
