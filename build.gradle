@@ -31,7 +31,7 @@ dependencies {
 	implementation group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.4.3'
 	compile('io.springfox:springfox-swagger2:2.9.2')
 	compile('io.springfox:springfox-swagger-ui:2.9.2')
-//	testImplementation group: 'uk.org.lidalia', name: 'slf4j-test', version: '1.2.0'
+	testImplementation 'com.google.code.gson:gson'
 
 //	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 }
