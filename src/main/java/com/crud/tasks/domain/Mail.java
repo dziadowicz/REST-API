@@ -1,3 +1,4 @@
+/*
 package com.crud.tasks.domain;
 
 import lombok.AllArgsConstructor;
@@ -16,4 +17,4 @@ public class Mail {
     private final String subject;
     @NonNull
     private final String message;
-}
+}*/

@@ -1,3 +1,4 @@
+/*
 package com.crud.tasks.scheulder;
 
 import com.crud.tasks.config.AdminConfig;
@@ -31,4 +32,4 @@ public class EmailScheduler {
                 .message(message)
                 .build());
     }
-}
+}*/
