@@ -1,4 +1,3 @@
-/*
 package com.crud.tasks.scheulder;
 
 import com.crud.tasks.config.AdminConfig;
@@ -21,15 +20,12 @@ public class EmailScheduler {
     @Scheduled(cron = "0 0 10 * * *")
 //    @Scheduled(fixedDelay = 10000)
     public void sendInformationEmail() {
-        long size = taskRepository.count();
-        String message =
-        (size == 1) ?
-                "Currently in database you got: " + size + " task" :
-                "Currently in database you got: " + size + " tasks";
+        String size = "" + taskRepository.count();
         simpleEmailService.send(Mail.builder()
                 .mailTo(adminConfig.getAdminMail())
                 .subject(SUBJECT)
-                .message(message)
+                .message(size)
+                .type("buildTasksNumberEmail")
                 .build());
     }
-}*/
+}

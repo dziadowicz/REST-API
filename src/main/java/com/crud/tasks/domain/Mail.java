@@ -16,4 +16,6 @@ public class Mail {
     private final String subject;
     @NonNull
     private final String message;
+    @NonNull
+    private final String type;
 }
